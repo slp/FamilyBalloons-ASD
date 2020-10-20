@@ -1,0 +1,159 @@
+#:kivy 1.0
+
+<FamilyBalloonIntro>:
+    go_btn: button
+    music_btn: music
+    
+    target10_btn: target10
+    target20_btn: target20
+    target30_btn: target30
+
+    velocity1_btn: velocity1
+    velocity2_btn: velocity2
+    velocity3_btn: velocity3
+
+    velocitydelta0_btn: velocitydelta0
+    velocitydelta1_btn: velocitydelta1
+    velocitydelta2_btn: velocitydelta2
+    velocitydelta3_btn: velocitydelta3
+
+    parallel1_btn: parallel1
+    parallel2_btn: parallel2
+    parallel3_btn: parallel3
+
+    taps2_btn: taps2
+    taps3_btn: taps3
+    
+    tata_btn: tata
+    papa_btn: papa
+    mama_btn: mama
+    yaya_btn: yaya
+    yayo_btn: yayo
+    
+    source: "images/background.png"
+    size: self.size
+
+    BoxLayout:
+        orientation: 'vertical'
+        center: root.center_x * 0.5, root.center_y * 0.3
+        size: dp(100), dp(100)
+
+        ToggleButton:
+            id: velocity1
+            text: "Velocity 1"
+
+        ToggleButton:
+            id: velocity2
+            text: "Velocity 2"
+
+        ToggleButton:
+            id: velocity3
+            text: "Velocity 3"
+
+    BoxLayout:
+        orientation: 'vertical'
+        center: root.center_x * 0.5, root.center_y * 1.7
+        size: dp(150), dp(100)
+
+        ToggleButton:
+            id: velocitydelta0
+            text: "Velocity Delta 0"
+
+        ToggleButton:
+            id: velocitydelta1
+            text: "Velocity Delta 1"
+
+        ToggleButton:
+            id: velocitydelta2
+            text: "Velocity Delta 2"
+
+        ToggleButton:
+            id: velocitydelta3
+            text: "Velocity Delta 3"
+
+    BoxLayout:
+        orientation: 'vertical'
+        center: root.center_x * 0.5, root.center_y
+        size: dp(100), dp(100)
+
+        ToggleButton:
+            id: target10
+            text: "Target 10"
+
+        ToggleButton:
+            id: target20
+            text: "Target 20"
+
+        ToggleButton:
+            id: target30
+            text: "Target 30"
+
+    BoxLayout:
+        orientation: 'vertical'
+        center: root.center_x, root.center_y * 1.7
+        size: dp(100), dp(100)
+
+        ToggleButton:
+            id: parallel1
+            text: "Parallel 1"
+
+        ToggleButton:
+            id: parallel2
+            text: "Parallel 2"
+
+        ToggleButton:
+            id: parallel3
+            text: "Parallel 3"
+
+    BoxLayout:
+        orientation: 'vertical'
+        center: root.center_x, root.center_y * 0.3
+        size: dp(100), dp(100)
+
+        ToggleButton:
+            id: taps2
+            text: "Double Tap"
+
+        ToggleButton:
+            id: taps3
+            text: "Triple Tap"
+
+    BoxLayout:
+        orientation: 'vertical'
+        center: root.center_x * 1.5, root.center_y
+        spacing: dp(10)
+        size: dp(100), dp(300)
+
+        ToggleButton:
+            id: mama
+            text: "Mama"
+
+        ToggleButton:
+            id: papa
+            text: "Papa"
+
+        ToggleButton:
+            id: tata
+            text: "Tata"
+            
+        ToggleButton:
+            id: yaya
+            text: "Yaya"
+            
+        ToggleButton:
+            id: yayo
+            text: "Yayo"
+
+    BoxLayout:
+        orientation: 'vertical'
+        center: root.center_x, root.center_y
+        size: dp(100), dp(100)
+        spacing: dp(20)
+
+        ToggleButton:
+            id: music
+            text: "Music"
+
+        Button:
+            id: button
+            text: "Start!"

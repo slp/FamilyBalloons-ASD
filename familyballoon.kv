@@ -1,0 +1,184 @@
+#:kivy 1.0.9
+
+<Cat>:
+    size: dp(60), dp(100)
+    canvas:
+        Rectangle:
+            source: 'images/cat.png'
+            pos: self.pos
+            size: self.size
+
+<Cow>:
+    size: dp(100), dp(100)
+    canvas:
+        Rectangle:
+            source: 'images/cow.png'
+            pos: self.pos
+            size: self.size
+
+<Crocodile>:
+    size: dp(120), dp(100)
+    canvas:
+        Rectangle:
+            source: 'images/crocodile.png'
+            pos: self.pos
+            size: self.size
+
+<Dog>:
+    size: dp(100), dp(100)
+    canvas:
+        Rectangle:
+            source: 'images/dog.png'
+            pos: self.pos
+            size: self.size
+            
+<Elephant>:
+    size: dp(120), dp(100)
+    canvas:
+        Rectangle:
+            source: 'images/elephant.png'
+            pos: self.pos
+            size: self.size
+<Hen>:
+    size: dp(100), dp(100)
+    canvas:
+        Rectangle:
+            source: 'images/hen.png'
+            pos: self.pos
+            size: self.size
+<Lion>:
+    size: dp(120), dp(100)
+    canvas:
+        Rectangle:
+            source: 'images/lion.png'
+            pos: self.pos
+            size: self.size
+<Tiger>:
+    size: dp(100), dp(100)
+    canvas:
+        Rectangle:
+            source: 'images/tiger.png'
+            pos: self.pos
+            size: self.size
+
+<BalloonRed>:
+    size: dp(100), dp(200)
+    canvas:
+        Rectangle:
+            source: 'images/balloon_red.png'
+            pos: self.pos
+            size: self.size
+
+<BalloonBlack>:
+    size: dp(100), dp(200)
+    canvas:
+        Rectangle:
+            source: 'images/balloon_black.png'
+            pos: self.pos
+            size: self.size
+
+<BalloonBlue>:
+    size: dp(100), dp(200)
+    canvas:
+        Rectangle:
+            source: 'images/balloon_blue.png'
+            pos: self.pos
+            size: self.size
+
+<BalloonGreen>:
+    size: dp(100), dp(200)
+    canvas:
+        Rectangle:
+            source: 'images/balloon_green.png'
+            pos: self.pos
+            size: self.size
+
+<BalloonOrange>:
+    size: dp(100), dp(200)
+    canvas:
+        Rectangle:
+            source: 'images/balloon_orange.png'
+            pos: self.pos
+            size: self.size
+
+<BalloonPink>:
+    size: dp(100), dp(200)
+    canvas:
+        Rectangle:
+            source: 'images/balloon_pink.png'
+            pos: self.pos
+            size: self.size
+
+<BalloonWhite>:
+    size: dp(100), dp(200)
+    canvas:
+        Rectangle:
+            source: 'images/balloon_white.png'
+            pos: self.pos
+            size: self.size
+
+<BalloonYellow>:
+    size: dp(100), dp(200)
+    canvas:
+        Rectangle:
+            source: 'images/balloon_yellow.png'
+            pos: self.pos
+            size: self.size
+
+<FamilyTata>:
+    size: dp(100), dp(200)
+    canvas:
+        Rectangle:
+            source: 'images/tata.png'
+            pos: self.pos
+            size: self.size
+
+<FamilyPapa>:
+    size: dp(100), dp(200)
+    canvas:
+        Rectangle:
+            source: 'images/papa.png'
+            pos: self.pos
+            size: self.size
+
+<FamilyMama>:
+    size: dp(100), dp(200)
+    canvas:
+        Rectangle:
+            source: 'images/mama.png'
+            pos: self.pos
+            size: self.size
+
+<FamilyYaya>:
+    size: dp(100), dp(200)
+    canvas:
+        Rectangle:
+            source: 'images/yaya.png'
+            pos: self.pos
+            size: self.size
+
+<FamilyYayo>:
+    size: dp(100), dp(200)
+    canvas:
+        Rectangle:
+            source: 'images/yayo.png'
+            pos: self.pos
+            size: self.size
+
+<FamilyBalloonGame>:
+    score: score
+    
+    canvas:
+        Rectangle:
+            source: 'images/background.png'
+            size: root.size
+    
+    Label:
+        font_size: '20sp'
+        center_x: root.width * 95 / 100
+        top: root.top - dp(5)
+        text: str(root.score.score)
+
+
+    Score:
+        id: score
